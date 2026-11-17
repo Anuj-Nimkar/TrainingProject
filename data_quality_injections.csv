@@ -1,0 +1,6 @@
+issue_type,affected_table,affected_columns,severity,description
+NULL_PLACEHOLDERS,All,Keys & timestamps,High,Null/blank/N/A injected
+DUPLICATES,"encounters, patient_events","encounter_id, event_id",High,Late resend duplicates
+OUTLIERS,encounters,LOS / wait times,Medium,Extreme durations
+LOGICAL_ANOMALIES,encounters,timestamps,High,Negative durations
+ORPHAN_EVENTS,patient_events,encounter_id,Medium,Invalid encounter refs
